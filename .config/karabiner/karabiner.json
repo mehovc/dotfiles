@@ -130,13 +130,13 @@
             ]
           },
           {
-            "description": "Hyper Key sublayer \"b\"",
+            "description": "Hyper Key sublayer \"z\"",
             "manipulators": [
               {
-                "description": "Toggle Hyper sublayer b",
+                "description": "Toggle Hyper sublayer z",
                 "type": "basic",
                 "from": {
-                  "key_code": "b",
+                  "key_code": "z",
                   "modifiers": {
                     "optional": [
                       "any"
@@ -146,7 +146,7 @@
                 "to_after_key_up": [
                   {
                     "set_variable": {
-                      "name": "hyper_sublayer_b",
+                      "name": "hyper_sublayer_z",
                       "value": 0
                     }
                   }
@@ -154,7 +154,7 @@
                 "to": [
                   {
                     "set_variable": {
-                      "name": "hyper_sublayer_b",
+                      "name": "hyper_sublayer_z",
                       "value": 1
                     }
                   }
@@ -180,10 +180,106 @@
               {
                 "to": [
                   {
+                    "shell_command": "open https://2gis.kz"
+                  }
+                ],
+                "description": "Open https://2gis.kz",
+                "type": "basic",
+                "from": {
+                  "key_code": "2",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_z",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "to": [
+                  {
                     "shell_command": "open https://news.ycombinator.com"
                   }
                 ],
                 "description": "Open https://news.ycombinator.com",
+                "type": "basic",
+                "from": {
+                  "key_code": "n",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_z",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "to": [
+                  {
+                    "shell_command": "open https://jira.uzum.com/"
+                  }
+                ],
+                "description": "Open https://jira.uzum.com/",
+                "type": "basic",
+                "from": {
+                  "key_code": "j",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_z",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "to": [
+                  {
+                    "shell_command": "open https://git.uzum.io/"
+                  }
+                ],
+                "description": "Open https://git.uzum.io/",
+                "type": "basic",
+                "from": {
+                  "key_code": "g",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_z",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "to": [
+                  {
+                    "shell_command": "open https://youtube.com/"
+                  }
+                ],
+                "description": "Open https://youtube.com/",
                 "type": "basic",
                 "from": {
                   "key_code": "y",
@@ -196,7 +292,103 @@
                 "conditions": [
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_b",
+                    "name": "hyper_sublayer_z",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "to": [
+                  {
+                    "shell_command": "open https://translate.yandex.com/"
+                  }
+                ],
+                "description": "Open https://translate.yandex.com/",
+                "type": "basic",
+                "from": {
+                  "key_code": "t",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_z",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "to": [
+                  {
+                    "shell_command": "open https://linkedin.com"
+                  }
+                ],
+                "description": "Open https://linkedin.com",
+                "type": "basic",
+                "from": {
+                  "key_code": "l",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_z",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "to": [
+                  {
+                    "shell_command": "open https://chat.openai.com"
+                  }
+                ],
+                "description": "Open https://chat.openai.com",
+                "type": "basic",
+                "from": {
+                  "key_code": "c",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_z",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "to": [
+                  {
+                    "shell_command": "open https://hn.algolia.com"
+                  }
+                ],
+                "description": "Open https://hn.algolia.com",
+                "type": "basic",
+                "from": {
+                  "key_code": "h",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_z",
                     "value": 1
                   }
                 ]
@@ -236,7 +428,7 @@
                 "conditions": [
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_b",
+                    "name": "hyper_sublayer_z",
                     "value": 0
                   },
                   {
@@ -310,7 +502,7 @@
                 "conditions": [
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_b",
+                    "name": "hyper_sublayer_z",
                     "value": 0
                   },
                   {
