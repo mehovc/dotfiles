@@ -782,10 +782,10 @@
               {
                 "to": [
                   {
-                    "shell_command": "open slack://open?team=uzum-team&id=C064BU913GR"
+                    "shell_command": "open slack://channel?team=uzum-team&id=C064BU913GR"
                   }
                 ],
-                "description": "Open slack://open?team=uzum-team&id=C064BU913GR",
+                "description": "Open slack://channel?team=uzum-team&id=C064BU913GR",
                 "type": "basic",
                 "from": {
                   "key_code": "b",
