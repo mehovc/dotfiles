@@ -488,6 +488,30 @@
                     "value": 1
                   }
                 ]
+              },
+              {
+                "to": [
+                  {
+                    "shell_command": "open https://huggingface.co/spaces/Xenova/the-tokenizer-playground"
+                  }
+                ],
+                "description": "Open https://huggingface.co/spaces/Xenova/the-tokenizer-playground",
+                "type": "basic",
+                "from": {
+                  "key_code": "i",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_grave_accent_and_tilde",
+                    "value": 1
+                  }
+                ]
               }
             ]
           },
