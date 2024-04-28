@@ -782,10 +782,10 @@
               {
                 "to": [
                   {
-                    "shell_command": "open slack://open?team={TEAM_ID}&id=foodtech-ops-dev-backend"
+                    "shell_command": "open slack://open?team=uzum-team&id=C064BU913GR"
                   }
                 ],
-                "description": "Open slack://open?team={TEAM_ID}&id=foodtech-ops-dev-backend",
+                "description": "Open slack://open?team=uzum-team&id=C064BU913GR",
                 "type": "basic",
                 "from": {
                   "key_code": "b",
