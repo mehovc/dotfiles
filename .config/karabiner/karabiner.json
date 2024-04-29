@@ -152,6 +152,11 @@
                     ]
                   }
                 ],
+                "to_if_alone": [
+                  {
+                    "key_code": "escape"
+                  }
+                ],
                 "to_after_key_up": [
                   {
                     "key_code": "escape"
