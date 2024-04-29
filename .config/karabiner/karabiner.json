@@ -149,7 +149,8 @@
                     "key_code": "left_control",
                     "modifiers": [
                       "left_command"
-                    ]
+                    ],
+                    "lazy": true
                   }
                 ],
                 "to_if_alone": [
@@ -157,14 +158,6 @@
                     "key_code": "escape"
                   }
                 ],
-                "to_after_key_up": [
-                  {
-                    "key_code": "escape"
-                  }
-                ],
-                "parameters": {
-                  "basic.to_if_alone_timeout_milliseconds": 100
-                },
                 "type": "basic"
               }
             ]
