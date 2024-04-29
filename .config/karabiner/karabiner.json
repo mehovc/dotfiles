@@ -157,8 +157,13 @@
                     "key_code": "escape"
                   }
                 ],
+                "to_after_key_up": [
+                  {
+                    "key_code": "escape"
+                  }
+                ],
                 "parameters": {
-                  "basic.to_if_alone_timeout_milliseconds": 100
+                  "basic.to_if_alone_timeout_milliseconds": 50
                 },
                 "type": "basic"
               }
