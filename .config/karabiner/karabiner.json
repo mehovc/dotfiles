@@ -442,10 +442,34 @@
               {
                 "to": [
                   {
-                    "shell_command": "open https://2gis.kz"
+                    "shell_command": "open raycast://extensions/benvp/audio-device/set-output-device"
                   }
                 ],
-                "description": "Open https://2gis.kz",
+                "description": "Open raycast://extensions/benvp/audio-device/set-output-device",
+                "type": "basic",
+                "from": {
+                  "key_code": "1",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_spacebar",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "to": [
+                  {
+                    "shell_command": "open raycast://extensions/benvp/audio-device/set-input-device"
+                  }
+                ],
+                "description": "Open raycast://extensions/benvp/audio-device/set-input-device",
                 "type": "basic",
                 "from": {
                   "key_code": "2",
