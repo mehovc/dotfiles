@@ -522,7 +522,7 @@
                 "description": "Open -a \"Slack\" \"slack://channel?team=T03CR7VBN0N&id=C064BU913GR\"",
                 "type": "basic",
                 "from": {
-                  "key_code": "b",
+                  "key_code": "d",
                   "modifiers": {
                     "optional": [
                       "any"
