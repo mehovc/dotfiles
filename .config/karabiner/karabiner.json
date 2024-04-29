@@ -172,7 +172,7 @@
             "description": "Hyper Key sublayer \"grave_accent_and_tilde\"",
             "manipulators": [
               {
-                "description": "Toggle Hyper sublayer grave_accent_and_tilde",
+                "description": "Toggle hyper sublayer grave_accent_and_tilde",
                 "type": "basic",
                 "from": {
                   "key_code": "grave_accent_and_tilde",
@@ -606,7 +606,7 @@
             "description": "Hyper Key sublayer \"o\"",
             "manipulators": [
               {
-                "description": "Toggle Hyper sublayer o",
+                "description": "Toggle hyper sublayer o",
                 "type": "basic",
                 "from": {
                   "key_code": "o",
@@ -704,7 +704,7 @@
             "description": "Hyper Key sublayer \"r\"",
             "manipulators": [
               {
-                "description": "Toggle Hyper sublayer r",
+                "description": "Toggle hyper sublayer r",
                 "type": "basic",
                 "from": {
                   "key_code": "r",
