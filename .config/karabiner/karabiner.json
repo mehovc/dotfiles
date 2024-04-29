@@ -863,10 +863,10 @@
               {
                 "to": [
                   {
-                    "shell_command": "open raycast://extensions/erics118/change-case/change-case"
+                    "shell_command": "open -a \"Safari\" raycast://extensions/erics118/change-case/change-case"
                   }
                 ],
-                "description": "Open raycast://extensions/erics118/change-case/change-case",
+                "description": "Open -a \"Safari\" raycast://extensions/erics118/change-case/change-case",
                 "type": "basic",
                 "from": {
                   "key_code": "c",
