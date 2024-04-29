@@ -157,6 +157,9 @@
                     "key_code": "escape"
                   }
                 ],
+                "parameters": {
+                  "basic.to_if_alone_timeout_milliseconds": 250
+                },
                 "type": "basic"
               }
             ]
