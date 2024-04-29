@@ -517,6 +517,54 @@
                     "value": 1
                   }
                 ]
+              },
+              {
+                "to": [
+                  {
+                    "shell_command": "open -a \"Slack\" \"slack://channel?team=T03CR7VBN0N&id=C064BU913GR\""
+                  }
+                ],
+                "description": "Open -a \"Slack\" \"slack://channel?team=T03CR7VBN0N&id=C064BU913GR\"",
+                "type": "basic",
+                "from": {
+                  "key_code": "b",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_grave_accent_and_tilde",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "to": [
+                  {
+                    "shell_command": "open -a \"Slack\" \"slack://channel?team=T03CR7VBN0N&id=C06KKQLE2N8\""
+                  }
+                ],
+                "description": "Open -a \"Slack\" \"slack://channel?team=T03CR7VBN0N&id=C06KKQLE2N8\"",
+                "type": "basic",
+                "from": {
+                  "key_code": "a",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_grave_accent_and_tilde",
+                    "value": 1
+                  }
+                ]
               }
             ]
           },
@@ -782,10 +830,10 @@
               {
                 "to": [
                   {
-                    "shell_command": "open slack://channel?team=uzum-team&id=C064BU913GR"
+                    "shell_command": "open -a \"Slack\" \"slack://channel?team=T03CR7VBN0N&id=C064BU913GR\""
                   }
                 ],
-                "description": "Open slack://channel?team=uzum-team&id=C064BU913GR",
+                "description": "Open -a \"Slack\" \"slack://channel?team=T03CR7VBN0N&id=C064BU913GR\"",
                 "type": "basic",
                 "from": {
                   "key_code": "b",
