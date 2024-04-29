@@ -672,10 +672,10 @@
               {
                 "to": [
                   {
-                    "shell_command": "open raycast://extensions/raycast/navigation/search-menu-items"
+                    "shell_command": "open raycast://extensions/erics118/change-case/change-case"
                   }
                 ],
-                "description": "Open raycast://extensions/raycast/navigation/search-menu-items",
+                "description": "Open raycast://extensions/erics118/change-case/change-case",
                 "type": "basic",
                 "from": {
                   "key_code": "m",
