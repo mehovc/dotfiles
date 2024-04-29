@@ -850,6 +850,70 @@
                 ]
               }
             ]
+          },
+          {
+            "description": "Hyper Key sublayer \"f1\"",
+            "manipulators": [
+              {
+                "description": "Toggle non_us_backslash sublayer f1",
+                "type": "basic",
+                "from": {
+                  "key_code": "f1",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to_after_key_up": [
+                  {
+                    "set_variable": {
+                      "name": "hyper_sublayer_f1",
+                      "value": 0
+                    }
+                  }
+                ],
+                "to": [
+                  {
+                    "set_variable": {
+                      "name": "hyper_sublayer_f1",
+                      "value": 1
+                    }
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "non_us_backslash",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "to": [
+                  {
+                    "shell_command": "open https://vc.ru"
+                  }
+                ],
+                "description": "Open https://vc.ru",
+                "type": "basic",
+                "from": {
+                  "key_code": "v",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_f1",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
