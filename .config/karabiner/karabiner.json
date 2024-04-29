@@ -254,6 +254,11 @@
                 "conditions": [
                   {
                     "type": "variable_if",
+                    "name": "hyper_sublayer_escape",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
                     "name": "non_us_backslash",
                     "value": 1
                   }
@@ -591,6 +596,75 @@
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_f1",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Hyper Key sublayer \"escape\"",
+            "manipulators": [
+              {
+                "description": "Toggle non_us_backslash sublayer escape",
+                "type": "basic",
+                "from": {
+                  "key_code": "escape",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to_after_key_up": [
+                  {
+                    "set_variable": {
+                      "name": "hyper_sublayer_escape",
+                      "value": 0
+                    }
+                  }
+                ],
+                "to": [
+                  {
+                    "set_variable": {
+                      "name": "hyper_sublayer_escape",
+                      "value": 1
+                    }
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_f1",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "non_us_backslash",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "to": [
+                  {
+                    "shell_command": "open -a \"Slack\" \"slack://channel?team=T03CR7VBN0N&id=C064BU913GR\""
+                  }
+                ],
+                "description": "Open -a \"Slack\" \"slack://channel?team=T03CR7VBN0N&id=C064BU913GR\"",
+                "type": "basic",
+                "from": {
+                  "key_code": "b",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_escape",
                     "value": 1
                   }
                 ]
