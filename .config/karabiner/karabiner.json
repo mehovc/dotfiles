@@ -67,12 +67,10 @@
                 "type": "basic",
                 "from": {
                   "key_code": "2",
-                  "modifiers": {
-                    "mandatory": [
+                  "modifiers": [
                       "shift"
                     ]
-                  }
-                },
+                  },
                 "to": [
                   {
                     "key_code": "2"
