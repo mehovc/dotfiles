@@ -419,7 +419,7 @@
             ]
           },
           {
-            "description": "Make § act as Control when held",
+            "description": "Make § act as Control when held and non_us_backslash layer",
             "manipulators": [
               {
                 "description": "Make § act as Control when held",
@@ -459,7 +459,168 @@
             ]
           },
           {
-            "description": "Hyper keys",
+            "description": "Left shift layer",
+            "manipulators": [
+              {
+                "description": "Left shift layer",
+                "from": {
+                  "key_code": "left_shift",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "set_variable": {
+                      "name": "shift",
+                      "value": 1
+                    }
+                  },
+                  {
+                    "key_code": "left_shift"
+                  }
+                ],
+                "to_after_key_up": [
+                  {
+                    "set_variable": {
+                      "name": "shift",
+                      "value": 0
+                    }
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Map Control+C to Option+Command+C in Raycast",
+            "manipulators": [
+              {
+                "description": "Map Control+C to Option+Command+C in Raycast",
+                "conditions": [
+                  {
+                    "bundle_identifiers": [
+                      "com.raycast.macos"
+                    ],
+                    "type": "frontmost_application_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "c",
+                  "modifiers": {
+                    "mandatory": [
+                      "control"
+                    ],
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "c",
+                    "modifiers": [
+                      "left_option",
+                      "left_command"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Map Control+C to Command+Shift+; in Safari",
+            "manipulators": [
+              {
+                "description": "Map Control+C to Command+Shift+; in Safari",
+                "conditions": [
+                  {
+                    "bundle_identifiers": [
+                      "^com\\.apple\\.Safari$"
+                    ],
+                    "type": "frontmost_application_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "c",
+                  "modifiers": {
+                    "mandatory": [
+                      "control"
+                    ],
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "semicolon",
+                    "modifiers": [
+                      "left_command",
+                      "left_shift"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "shift + space -> control + option + cmd",
+            "manipulators": [
+              {
+                "description": "shift + space -> control + option + cmd",
+                "type": "basic",
+                "from": {
+                  "key_code": "spacebar",
+                  "modifiers": {
+                    "mandatory": [
+                      "shift"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "left_control",
+                    "modifiers": [
+                      "left_option",
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "control + spacebar -> option + cmd",
+            "manipulators": [
+              {
+                "description": "control + spacebar -> option + cmd",
+                "type": "basic",
+                "from": {
+                  "key_code": "spacebar",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_control"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "left_option",
+                    "modifiers": [
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Fn -> Hyper key and hyper layer",
             "manipulators": [
               {
                 "description": "Fn -> Hyper Key",
@@ -496,145 +657,11 @@
                   }
                 ],
                 "type": "basic"
-              },
-              {
-                "description": "Left shift layer",
-                "from": {
-                  "key_code": "left_shift",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "to": [
-                  {
-                    "set_variable": {
-                      "name": "shift",
-                      "value": 1
-                    }
-                  },
-                  {
-                    "key_code": "left_shift"
-                  }
-                ],
-                "to_after_key_up": [
-                  {
-                    "set_variable": {
-                      "name": "shift",
-                      "value": 0
-                    }
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "description": "Map Control+C to Option+Command+C in Raycast",
-                "conditions": [
-                  {
-                    "bundle_identifiers": [
-                      "com.raycast.macos"
-                    ],
-                    "type": "frontmost_application_if"
-                  }
-                ],
-                "from": {
-                  "key_code": "c",
-                  "modifiers": {
-                    "mandatory": [
-                      "control"
-                    ],
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "c",
-                    "modifiers": [
-                      "left_option",
-                      "left_command"
-                    ]
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "description": "Map Control+C to Command+Shift+; in Safari",
-                "conditions": [
-                  {
-                    "bundle_identifiers": [
-                      "^com\\.apple\\.Safari$"
-                    ],
-                    "type": "frontmost_application_if"
-                  }
-                ],
-                "from": {
-                  "key_code": "c",
-                  "modifiers": {
-                    "mandatory": [
-                      "control"
-                    ],
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "semicolon",
-                    "modifiers": [
-                      "left_command",
-                      "left_shift"
-                    ]
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "type": "basic",
-                "from": {
-                  "key_code": "spacebar",
-                  "modifiers": {
-                    "mandatory": [
-                      "shift"
-                    ]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "left_control",
-                    "modifiers": [
-                      "left_option",
-                      "left_command"
-                    ]
-                  }
-                ]
-              },
-              {
-                "type": "basic",
-                "from": {
-                  "key_code": "spacebar",
-                  "modifiers": {
-                    "mandatory": [
-                      "left_control"
-                    ]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "left_option",
-                    "modifiers": [
-                      "left_command"
-                    ]
-                  }
-                ]
               }
             ]
           },
           {
-            "description": "Hyper Key sublayer \"f1\"",
+            "description": "non_us_backslash key sublayer \"f1\"",
             "manipulators": [
               {
                 "description": "Toggle non_us_backslash sublayer f1",
@@ -732,7 +759,7 @@
             ]
           },
           {
-            "description": "Hyper Key sublayer \"escape\"",
+            "description": "non_us_backslash key sublayer \"escape\"",
             "manipulators": [
               {
                 "description": "Toggle non_us_backslash sublayer escape",
@@ -830,7 +857,7 @@
             ]
           },
           {
-            "description": "Hyper Key sublayer \"spacebar\"",
+            "description": "non_us_backslash key sublayer \"spacebar\"",
             "manipulators": [
               {
                 "description": "Toggle non_us_backslash sublayer spacebar",
