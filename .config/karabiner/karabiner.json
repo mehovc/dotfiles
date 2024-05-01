@@ -335,6 +335,11 @@
                     "pointing_button": "button2"
                   }
                 ],
+                "to_after_key_up": [
+                  {
+                    "pointing_button": "button1"
+                  }
+                ],
                 "conditions": [
                   {
                     "type": "frontmost_application_if",
