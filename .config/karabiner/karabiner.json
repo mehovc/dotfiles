@@ -360,7 +360,7 @@
                     "key_code": "down_arrow"
                   },
                   {
-                    "key_code": "return"
+                    "key_code": "keypad_enter"
                   }
                 ],
                 "conditions": [
