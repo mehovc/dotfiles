@@ -361,9 +361,6 @@
                   },
                   {
                     "key_code": "keypad_enter"
-                  },
-                  {
-                    "pointing_button": "button1"
                   }
                 ],
                 "conditions": [
