@@ -358,6 +358,12 @@
                   },
                   {
                     "key_code": "down_arrow"
+                  },
+                  {
+                    "key_code": "return"
+                  },
+                  {
+                    "pointing_button": "button1"
                   }
                 ],
                 "conditions": [
