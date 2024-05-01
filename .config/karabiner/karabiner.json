@@ -907,10 +907,10 @@
               {
                 "to": [
                   {
-                    "shell_command": "open raycast://extensions/benvp/audio-device/set-output-device"
+                    "shell_command": "open raycast://extensions/benvp/audio-device/set-input-device"
                   }
                 ],
-                "description": "Open raycast://extensions/benvp/audio-device/set-output-device",
+                "description": "Open raycast://extensions/benvp/audio-device/set-input-device",
                 "type": "basic",
                 "from": {
                   "key_code": "1",
@@ -931,10 +931,10 @@
               {
                 "to": [
                   {
-                    "shell_command": "open raycast://extensions/benvp/audio-device/set-input-device"
+                    "shell_command": "open raycast://extensions/benvp/audio-device/set-output-device"
                   }
                 ],
-                "description": "Open raycast://extensions/benvp/audio-device/set-input-device",
+                "description": "Open raycast://extensions/benvp/audio-device/set-output-device",
                 "type": "basic",
                 "from": {
                   "key_code": "2",
