@@ -433,10 +433,10 @@
                 },
                 "to": [
                   {
-                    "key_code": "left_control",
+                    "key_code": "left_shift",
                     "modifiers": [
                       "left_option",
-                      "left_shift"
+                      "left_control"
                     ]
                   },
                   {
@@ -444,15 +444,6 @@
                       "name": "non_us_backslash",
                       "value": 1
                     }
-                  }
-                ],
-                "to_if_held_down": [
-                  {
-                    "key_code": "left_control",
-                    "modifiers": [
-                      "left_option",
-                      "left_shift"
-                    ]
                   }
                 ],
                 "to_after_key_up": [
