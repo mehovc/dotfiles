@@ -381,6 +381,56 @@
             ]
           },
           {
+            "description": "Control as right click in telegram",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "key_code": "left_control",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "pointing_button": "button2"
+                  },
+                  {
+                    "key_code": "down_arrow"
+                  },
+                  {
+                    "key_code": "down_arrow"
+                  },
+                  {
+                    "key_code": "down_arrow"
+                  },
+                  {
+                    "key_code": "down_arrow"
+                  },
+                  {
+                    "key_code": "keypad_enter"
+                  },
+                  {
+                    "pointing_button": "button2"
+                  },
+                  {
+                    "pointing_button": "button1"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "frontmost_application_if",
+                    "bundle_identifiers": [
+                      "^com\\.spotify\\.client"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "description": "non_us_backslash key sublayer \"f1\"",
             "manipulators": [
               {
