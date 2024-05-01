@@ -289,7 +289,7 @@
               {
                 "type": "basic",
                 "from": {
-                  "key_code": "non_us_backslash",
+                  "key_code": "left_control",
                   "modifiers": {
                     "optional": [
                       "any"
@@ -336,6 +336,11 @@
                     "bundle_identifiers": [
                       "^com\\.tdesktop\\.Telegram"
                     ]
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "multitouch_extension_finger_count_total",
+                    "value": 1
                   }
                 ]
               }
