@@ -419,6 +419,46 @@
             ]
           },
           {
+            "description": "Make § act as Control when held",
+            "manipulators": [
+              {
+                "description": "Make § act as Control when held",
+                "from": {
+                  "key_code": "non_us_backslash",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "left_control",
+                    "modifiers": [
+                      "left_option",
+                      "left_shift"
+                    ]
+                  },
+                  {
+                    "set_variable": {
+                      "name": "non_us_backslash",
+                      "value": 1
+                    }
+                  }
+                ],
+                "to_after_key_up": [
+                  {
+                    "set_variable": {
+                      "name": "non_us_backslash",
+                      "value": 0
+                    }
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
             "description": "Hyper keys",
             "manipulators": [
               {
@@ -548,41 +588,6 @@
                       "left_command",
                       "left_shift"
                     ]
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "description": "Make § act as Control when held",
-                "from": {
-                  "key_code": "non_us_backslash",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "left_control",
-                    "modifiers": [
-                      "left_option",
-                      "left_shift"
-                    ]
-                  },
-                  {
-                    "set_variable": {
-                      "name": "non_us_backslash",
-                      "value": 1
-                    }
-                  }
-                ],
-                "to_after_key_up": [
-                  {
-                    "set_variable": {
-                      "name": "non_us_backslash",
-                      "value": 0
-                    }
                   }
                 ],
                 "type": "basic"
