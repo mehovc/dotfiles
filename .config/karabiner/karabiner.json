@@ -386,10 +386,10 @@
               {
                 "type": "basic",
                 "from": {
-                  "key_code": "left_command",
+                  "key_code": "1",
                   "modifiers": {
                     "optional": [
-                      "any"
+                      "left_command"
                     ]
                   }
                 },
