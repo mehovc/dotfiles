@@ -307,6 +307,11 @@
                     "bundle_identifiers": [
                       "^com\\.apple\\.Safari$"
                     ]
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "multitouch_extension_finger_count_total",
+                    "value": 1
                   }
                 ]
               }
@@ -388,6 +393,11 @@
                     "bundle_identifiers": [
                       "^com\\.spotify\\.client"
                     ]
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "multitouch_extension_finger_count_total",
+                    "value": 1
                   }
                 ]
               }
@@ -438,6 +448,11 @@
                     "bundle_identifiers": [
                       "^com\\.spotify\\.client"
                     ]
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "multitouch_extension_finger_count_total",
+                    "value": 1
                   }
                 ]
               }
