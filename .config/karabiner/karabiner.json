@@ -305,6 +305,35 @@
             ]
           },
           {
+            "description": "Control as right click in telegram",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "key_code": "left_control",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "pointing_button": "button2"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "frontmost_application_if",
+                    "bundle_identifiers": [
+                      "^org\\.telegram\\.desktop$"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "description": "non_us_backslash key sublayer \"f1\"",
             "manipulators": [
               {
