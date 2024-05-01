@@ -276,6 +276,35 @@
             ]
           },
           {
+            "description": "Control as middle click in safari",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "key_code": "left_control",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "pointing_button": "button3"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "frontmost_application_if",
+                    "bundle_identifiers": [
+                      "^com\\.apple\\.Safari$"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "description": "non_us_backslash key sublayer \"f1\"",
             "manipulators": [
               {
