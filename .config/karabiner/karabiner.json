@@ -69,6 +69,14 @@
                     }
                   }
                 ],
+                "conditions": [
+                  {
+                    "type": "frontmost_application_unless",
+                    "bundle_identifiers": [
+                      "^com\\.spotify\\.client"
+                    ]
+                  }
+                ],
                 "type": "basic"
               }
             ]
