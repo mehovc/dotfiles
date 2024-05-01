@@ -339,10 +339,10 @@
               {
                 "type": "basic",
                 "from": {
-                  "key_code": "1",
+                  "key_code": "left_control",
                   "modifiers": {
                     "optional": [
-                      "left_control"
+                      "any"
                     ]
                   }
                 },
@@ -386,10 +386,10 @@
               {
                 "type": "basic",
                 "from": {
-                  "key_code": "2",
+                  "key_code": "non_us_backslash",
                   "modifiers": {
                     "optional": [
-                      "left_control"
+                      "any"
                     ]
                   }
                 },
