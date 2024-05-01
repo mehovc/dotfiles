@@ -446,6 +446,15 @@
                     }
                   }
                 ],
+                "to_if_held_down": [
+                  {
+                    "key_code": "left_control",
+                    "modifiers": [
+                      "left_option",
+                      "left_shift"
+                    ]
+                  }
+                ],
                 "to_after_key_up": [
                   {
                     "set_variable": {
