@@ -289,7 +289,7 @@
               {
                 "type": "basic",
                 "from": {
-                  "key_code": "left_control",
+                  "key_code": "non_us_backslash",
                   "modifiers": {
                     "optional": [
                       "any"
@@ -342,7 +342,7 @@
             ]
           },
           {
-            "description": "Control as right click in telegram",
+            "description": "Control as add to queue shortcut spotify in liked songs/etc",
             "manipulators": [
               {
                 "type": "basic",
@@ -389,7 +389,7 @@
             ]
           },
           {
-            "description": "Control as right click in telegram",
+            "description": "Control as add to queue shortcut spotify in created playlists",
             "manipulators": [
               {
                 "type": "basic",
