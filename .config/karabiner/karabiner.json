@@ -417,6 +417,9 @@
                   },
                   {
                     "pointing_button": "button1"
+                  },
+                  {
+                    "pointing_button": "button1"
                   }
                 ],
                 "conditions": [
