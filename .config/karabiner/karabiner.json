@@ -331,6 +331,34 @@
             ]
           },
           {
+            "description": "Control as right click in telegram",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "key_code": "left_shift",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "pointing_button": "button1"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "multitouch_extension_finger_count_total",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "description": "Control as add to queue shortcut spotify in liked songs/etc",
             "manipulators": [
               {
