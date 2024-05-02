@@ -338,21 +338,24 @@
             ]
           },
           {
-            "description": "Control as right click in telegram",
+            "description": "Left Shift to hold left click when one finger on trackpad",
             "manipulators": [
               {
                 "type": "basic",
                 "from": {
-                  "key_code": "left_shift",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
+                  "key_code": "left_shift"
                 },
                 "to": [
                   {
-                    "pointing_button": "button1"
+                    "pointing_button": "button1",
+                    "modifiers": [
+                      "left_shift"
+                    ]
+                  }
+                ],
+                "to_if_alone": [
+                  {
+                    "key_code": "left_shift"
                   }
                 ],
                 "conditions": [
