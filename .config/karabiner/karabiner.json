@@ -337,7 +337,43 @@
               }
             ]
           },
-          {},
+          {
+            "description": "Left Shift to hold left click when one finger on trackpad",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "key_code": "left_shift"
+                },
+                "to": [
+                  {
+                    "pointing_button": "button1"
+                  },
+                  {
+                    "pointing_button": "button1",
+                    "modifiers": [
+                      "left_shift"
+                    ]
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "multitouch_extension_finger_count_total",
+                    "value": 1
+                  }
+                ],
+                "to_after_key_up": [
+                  {
+                    "key_code": "c",
+                    "modifiers": [
+                      "left_command"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
           {
             "description": "Control as add to queue shortcut spotify in liked songs/etc",
             "manipulators": [
