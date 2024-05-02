@@ -371,6 +371,9 @@
                     "modifiers": [
                       "left_command"
                     ]
+                  },
+                  {
+                    "pointing_button": "button1"
                   }
                 ]
               }
