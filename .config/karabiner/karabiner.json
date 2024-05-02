@@ -347,6 +347,9 @@
                 },
                 "to": [
                   {
+                    "pointing_button": "button1"
+                  },
+                  {
                     "pointing_button": "button1",
                     "modifiers": [
                       "left_shift"
