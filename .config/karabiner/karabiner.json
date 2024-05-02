@@ -364,6 +364,14 @@
                     "name": "multitouch_extension_finger_count_total",
                     "value": 1
                   }
+                ],
+                "to_after_key_up": [
+                  {
+                    "key_code": "c",
+                    "modifiers": [
+                      "left_command"
+                    ]
+                  }
                 ]
               }
             ]
