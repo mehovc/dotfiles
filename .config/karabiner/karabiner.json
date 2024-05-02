@@ -356,11 +356,6 @@
                     ]
                   }
                 ],
-                "to_if_alone": [
-                  {
-                    "key_code": "left_shift"
-                  }
-                ],
                 "conditions": [
                   {
                     "type": "variable_if",
