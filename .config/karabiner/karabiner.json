@@ -147,6 +147,28 @@
                 },
                 "to": [
                   {
+                    "key_code": "caps_lock"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Fn -> Hyper key and hyper layer",
+            "manipulators": [
+              {
+                "description": "Fn -> Hyper Key",
+                "from": {
+                  "key_code": "caps_lock",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
                     "set_variable": {
                       "name": "hyper",
                       "value": 1
