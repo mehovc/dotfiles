@@ -771,7 +771,7 @@
               {
                 "description": "Fn -> Hyper Key",
                 "from": {
-                  "key_code": "h",
+                  "key_code": "l",
                   "modifiers": {
                     "mandatory": [
                       "left_command",
