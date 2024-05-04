@@ -783,6 +783,21 @@
                 },
                 "to": [
                   {
+                    "key_code": "l",
+                    "modifiers": [
+                      "left_command"
+                    ]
+                  },
+                  {
+                    "key_code": "c",
+                    "modifiers": [
+                      "left_command"
+                    ]
+                  },
+                  {
+                    "key_code": "escape"
+                  },
+                  {
                     "shell_command": "/bin/bash $HOME/Apps/karabiner/dev_utils/gitlab_clone.sh"
                   }
                 ],
