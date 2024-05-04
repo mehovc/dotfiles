@@ -783,7 +783,7 @@
                 },
                 "to": [
                   {
-                    "shell_command": "/bin/bash /Users/n.naumov/.DevUtils/gitlab_clone.sh"
+                    "shell_command": "/bin/bash $HOME/Apps/karabiner/dev_utils/gitlab_clone.sh"
                   }
                 ],
                 "type": "basic"
