@@ -783,7 +783,7 @@
                 },
                 "to": [
                   {
-                    "shell_command": "pbpaste | sed -e 's|https://||' -e 's|/|:|g' -e 's|$|.git|' -e 's|^|git@|' | xargs -I{} bash -c 'git clone {} $HOME/Apps/$(basename {} .git) && goland $HOME/Apps/$(basename {} .git)"
+                    "shell_command": "/bin/bash /Users/n.naumov/.DevUtils/gitlab_clone.sh"
                   }
                 ],
                 "type": "basic"
