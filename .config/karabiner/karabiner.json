@@ -799,6 +799,12 @@
                   },
                   {
                     "shell_command": "/bin/bash $HOME/Apps/karabiner/dev_utils/gitlab_clone.sh"
+                  },
+                  {
+                    "key_code": "3",
+                    "modifiers": [
+                      "left_option"
+                    ]
                   }
                 ],
                 "type": "basic"
