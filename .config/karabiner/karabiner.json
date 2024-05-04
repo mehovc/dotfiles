@@ -767,6 +767,26 @@
                   }
                 ],
                 "type": "basic"
+              },
+              {
+                "description": "Fn -> Hyper Key",
+                "from": {
+                  "key_code": "h",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_command",
+                      "left_control",
+                      "left_option",
+                      "left_shift"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "pbpaste | sed -e 's|https://||' -e 's|/|:|g' -e 's|$|.git|' -e 's|^|git@|' | xargs -I{} bash -c 'git clone {} $HOME/Apps/$(basename {} .git) && goland $HOME/Apps/$(basename {} .git)"
+                  }
+                ],
+                "type": "basic"
               }
             ]
           },
