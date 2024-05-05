@@ -726,6 +726,31 @@
                     ]
                   }
                 ]
+              },
+              {
+                "description": "raycast ai switch to english",
+                "from": {
+                  "key_code": "a",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_option"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "a",
+                    "modifiers": [
+                      "left_option"
+                    ]
+                  },
+                  {
+                    "select_input_source": {
+                      "input_source_id": "com.apple.keylayout.ABC"
+                    }
+                  }
+                ],
+                "type": "basic"
               }
             ]
           },
