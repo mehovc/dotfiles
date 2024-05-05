@@ -82,7 +82,7 @@ alias project="cd $(go list -m -e -json | jq -r .Dir)"
 alias psql="pgcli"
 alias rm="trash"
 alias bat="bat --paging=never"
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias config='/usr/bin/git --git-dir=$HOME/settings/.git --work-tree=$HOME'
 
 function chpwd() {
     emulate -L zsh
